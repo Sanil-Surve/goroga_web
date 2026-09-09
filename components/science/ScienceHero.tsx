@@ -83,26 +83,31 @@ export default function ScienceHero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.4 }}
-          className="mt-20 pt-10 border-t border-gray-200/60"
+          className="mt-16 sm:mt-20 pt-8 sm:pt-10 border-t border-gray-200/70"
         >
-          <p className="text-xs font-medium uppercase tracking-wider text-gray-400 mb-6">
-            Evaluated & Published with Leading Research Institutions
-          </p>
-          <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-4 items-center">
+          <div className="flex items-center space-x-2.5 mb-6 sm:mb-8 justify-center sm:justify-start">
+            <span className="w-2 h-2 rounded-full bg-[#257f8d] shrink-0" />
+            <h2 className="text-xs sm:text-sm font-semibold uppercase tracking-wider text-gray-500">
+              Evaluated &amp; Published with Leading Research Institutions
+            </h2>
+          </div>
+
+          <div className="flex flex-wrap lg:flex-nowrap justify-center items-stretch gap-3 sm:gap-4">
             {sciencePartners.map((partner) => (
               <motion.div
                 key={partner.id}
                 whileHover={{ y: -3, scale: 1.02 }}
                 transition={{ duration: 0.2 }}
-                className="bg-white/80 backdrop-blur-md rounded-2xl p-4 border border-white/90 shadow-[0_4px_16px_rgba(0,0,0,0.03),inset_0_1px_1px_rgba(255,255,255,0.9)] flex items-center justify-center h-20 transition-all hover:shadow-[0_10px_24px_rgba(37,127,141,0.12)] hover:border-teal-200"
+                className="w-[calc(50%-6px)] sm:w-[calc(25%-12px)] lg:w-auto lg:flex-1 lg:min-w-0 h-20 sm:h-22 md:h-24 bg-white/85 backdrop-blur-md rounded-2xl px-3.5 py-3 sm:px-4 sm:py-3.5 border border-gray-200/70 shadow-[0_4px_16px_rgba(0,0,0,0.03),inset_0_1px_1px_rgba(255,255,255,0.9)] flex items-center justify-center transition-all duration-300 hover:bg-white hover:border-teal-300/70 hover:shadow-[0_8px_24px_rgba(37,127,141,0.14)] group cursor-default"
+                title={partner.name}
               >
-                <div className="relative w-full h-12">
+                <div className="relative w-full flex items-center justify-center h-10 sm:h-12 md:h-14">
                   <Image
                     src={partner.logo}
                     alt={partner.name}
-                    fill
-                    className="object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
-                    sizes="(max-width: 640px) 45vw, (max-width: 1024px) 25vw, 14vw"
+                    width={180}
+                    height={60}
+                    className="max-h-9 sm:max-h-11 md:max-h-12 w-auto max-w-[115px] sm:max-w-[135px] md:max-w-[155px] object-contain transition-all duration-300 filter grayscale opacity-75 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105"
                   />
                 </div>
               </motion.div>

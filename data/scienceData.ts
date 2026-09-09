@@ -41,37 +41,37 @@ export const sciencePartners: ResearchPartner[] = [
   {
     id: "mitacs-partner",
     name: "Mitacs",
-    logo: "https://cdn.prod.website-files.com/664f8c6767a446b70ba9e96d/68b206a82f28bcd41e17b7b2_Untitled%20design%20(35).png",
+    logo: "/assets/science/mitacs.png",
   },
   {
     id: "waterloo-partner",
     name: "University of Waterloo",
-    logo: "https://cdn.prod.website-files.com/664f8c6767a446b70ba9e96d/68b20846eb767b4f87e25780_3.png",
+    logo: "/assets/science/waterloo.png",
   },
   {
     id: "neuro-partner",
     name: "Society for Neuroscience",
-    logo: "https://cdn.prod.website-files.com/664f8c6767a446b70ba9e96d/68b208462e14a273bc4d40dc_4.png",
+    logo: "/assets/science/sfn.png",
   },
   {
     id: "brain-partner",
     name: "Brain & Behavior Journal",
-    logo: "https://cdn.prod.website-files.com/664f8c6767a446b70ba9e96d/68b20846dfcf901ab1e0cc05_7.png",
+    logo: "/assets/science/brain-behavior.png",
   },
   {
     id: "advances-partner",
     name: "Advances in Neuroscience",
-    logo: "https://cdn.prod.website-files.com/664f8c6767a446b70ba9e96d/68b2084609cca70479975150_6.png",
+    logo: "/assets/science/advances-neuro.png",
   },
   {
     id: "brain-stim-partner",
     name: "Brain Stimulation",
-    logo: "https://cdn.prod.website-files.com/664f8c6767a446b70ba9e96d/68b20846d95e92e7a6a8d811_2.png",
+    logo: "/assets/science/brain-stim.png",
   },
   {
     id: "cabhi-partner",
     name: "CABHI Research",
-    logo: "https://cdn.prod.website-files.com/664f8c6767a446b70ba9e96d/68b20846e473d3cba94249f3_5.png",
+    logo: "/assets/science/cabhi.png",
   },
 ];
 
