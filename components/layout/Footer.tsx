@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 
 
@@ -20,20 +21,20 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3 text-sm">
               <li>
-                <a
-                  href="#Product-Purchase"
+                <Link
+                  href="/#Product-Purchase"
                   className="text-gray-600 hover:text-[#257f8d] transition"
                 >
                   GoRoga Device
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#mindfulness"
+                <Link
+                  href="/#mindfulness"
                   className="text-gray-600 hover:text-[#257f8d] transition"
                 >
                   GoRoga App
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -45,28 +46,28 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3 text-sm">
               <li>
-                <a
-                  href="#trusted-by"
+                <Link
+                  href="/#trusted-by"
                   className="text-gray-600 hover:text-[#257f8d] transition"
                 >
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#science"
-                  className="text-gray-600 hover:text-[#257f8d] transition"
+                <Link
+                  href="/science"
+                  className="text-gray-600 hover:text-[#257f8d] transition font-medium"
                 >
                   Science & Research
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#Product-Purchase"
+                <Link
+                  href="/#Product-Purchase"
                   className="text-gray-600 hover:text-[#257f8d] transition"
                 >
                   Business Solutions
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -78,12 +79,12 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3 text-sm">
               <li>
-                <a
-                  href="#science"
-                  className="text-gray-600 hover:text-[#257f8d] transition"
+                <Link
+                  href="/science#Studies"
+                  className="text-gray-600 hover:text-[#257f8d] transition font-medium"
                 >
                   Clinical Studies
-                </a>
+                </Link>
               </li>
               <li>
                 <a
@@ -104,12 +105,12 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a
-                  href="#Product-Purchase"
+                <Link
+                  href="/#Product-Purchase"
                   className="text-gray-600 hover:text-[#257f8d] transition"
                 >
                   HSA/FSA Payment
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -121,28 +122,28 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3 text-sm">
               <li>
-                <a
-                  href="#newsletter"
+                <Link
+                  href="/#newsletter"
                   className="text-gray-600 hover:text-[#257f8d] transition"
                 >
                   Contact Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#how-it-works"
+                <Link
+                  href="/#how-it-works"
                   className="text-gray-600 hover:text-[#257f8d] transition"
                 >
                   FAQs
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#how-it-works"
+                <Link
+                  href="/#how-it-works"
                   className="text-gray-600 hover:text-[#257f8d] transition"
                 >
                   Set Up Your Device
-                </a>
+                </Link>
               </li>
               <li>
                 <a
