@@ -1,12 +1,11 @@
 "use client";
 
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import { videoReviews } from "@/data/videoReviews";
-import { ChevronLeft, ChevronRight, Play, Pause } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export default function VideoReviewsCarousel() {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
-  const [activeVideo, setActiveVideo] = useState<string | null>(null);
 
   const scrollPrev = () => {
     if (scrollContainerRef.current) {

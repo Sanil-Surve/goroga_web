@@ -304,7 +304,7 @@ export default function Footer() {
                 />
               </a>
             </div>
-            <div className="text-xs text-gray-500">
+            <div className="text-xs text-gray-500" suppressHydrationWarning>
               © {new Date().getFullYear()} Roga Life Inc. All rights reserved.
             </div>
           </div>
